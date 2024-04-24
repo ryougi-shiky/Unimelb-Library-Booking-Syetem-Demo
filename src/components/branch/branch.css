@@ -36,3 +36,9 @@
     margin-top: 8px;
     font-weight: bold;
 }
+
+.noise-level {
+    font-size: 2rem;
+    /* Adjust the size of the emoji as needed */
+    margin-top: 8px;
+}

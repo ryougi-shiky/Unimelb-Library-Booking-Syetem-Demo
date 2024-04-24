@@ -1,11 +1,8 @@
 .App-header {
-  background-color: #282c34;
-  min-height: 10vh;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  color: white;
+  align-items: left;
+  color: #110c41;
+  padding-left: 20px;
 }
 
 .Library-branches {
@@ -34,5 +31,3 @@
   background-color: green;
   transition: width 0.5s ease-in-out;
 }
-
-/* Add more styles as needed */
