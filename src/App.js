@@ -6,6 +6,7 @@ import TopBar from './components/topbar/TopBar';
 import Branch from './components/branch/Branch';
 import ControlPanel from './components/controlPanel/ControPanel';
 import Login from './components/login/Login';
+import BuildingMap from './components/BuildingMap/BuildingMap';
 
 function App() {
   const [showCapacity, setShowCapacity] = useState(true);
@@ -50,6 +51,7 @@ function App() {
           </>
         } />
         <Route path="/login" element={<Login />} />
+        <Route path="/building-map" element={<BuildingMap />} />
       </Routes>
     </Router>
   );

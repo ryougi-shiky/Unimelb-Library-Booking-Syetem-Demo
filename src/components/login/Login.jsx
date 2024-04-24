@@ -1,13 +1,17 @@
 // LoginPage.jsx
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 import './login.css'; // Make sure to create a LoginPage.css file for styles
 
 const logoUrl = "https://yt3.googleusercontent.com/8YX4eqlHQUS9QTx8W_xVQyR_qPvjtNoLhtkG-vncIbWIl94qu012tHUGUvhpVktOQ3Z19cITdQ=s900-c-k-c0x00ffffff-no-rj";
 
-function Login({ }) {
+function Login() {
+    let navigate = useNavigate();
+
     const handleLoginClick = () => {
         console.log('Login button clicked');
-        // Implement login functionality or redirect as needed
+        navigate('/building-map'); // Redirect to the BuildingMap component
     };
 
     return (

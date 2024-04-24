@@ -15,17 +15,11 @@
     flex-grow: 1;
 }
 
-.login-logo {
-    margin-bottom: 2rem;
-    /* Adjust size and add a background image or an <img> tag for the logo */
-}
-
 .login-title {
     color: white;
     margin-top: 2rem;
-    /* Adjust the margin to push it down from the top bar */
     font-size: 1.5rem;
-    width: 100%;
+    width: 50%;
     text-align: center;
 }
 

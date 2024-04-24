@@ -1,0 +1,56 @@
+/* buildingmap.css */
+.building-map-container {
+    perspective: 1000px;
+    perspective-origin: 50% 200px;
+}
+
+.building-level {
+    transform-style: preserve-3d;
+    margin-bottom: 20px;
+    transition: transform 0.5s;
+}
+
+.building-level:hover {
+    transform: rotateX(-20deg);
+}
+
+.front,
+.back,
+.left,
+.right,
+.top {
+    position: absolute;
+    border: 1px solid #666;
+    background-color: #f0f0f0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.front {
+    width: 200px;
+    height: 100px;
+    transform: translateZ(50px);
+}
+
+.back {
+    width: 200px;
+    height: 100px;
+    transform: rotateY(180deg) translateZ(50px);
+}
+
+.right {
+    width: 100px;
+    height: 100px;
+    transform: rotateY(90deg) translateZ(150px);
+}
+
+.left {
+    width: 100px;
+    height: 100px;
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+.top {
+    width: 200px;
+    height: 100px;
+    transform: rotateX(90deg) translateZ(50px);
+}
