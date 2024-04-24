@@ -1,0 +1,38 @@
+/* Branch.css */
+.library-branch {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 16px;
+    /* Adjust the width as needed */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Optional: adds shadow for depth */
+    background-color: #fff;
+}
+
+.branch-info {
+    text-align: center;
+}
+
+.branch-name {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.occupancy-bar-outer {
+    background-color: #eee;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    /* Ensures the inner bar stays within the rounded corners */
+}
+
+.occupancy-bar-inner {
+    height: 100%;
+    transition: width 0.5s ease;
+    /* Smooth transition for the bar */
+}
+
+.occupancy-percentage {
+    margin-top: 8px;
+    font-weight: bold;
+}

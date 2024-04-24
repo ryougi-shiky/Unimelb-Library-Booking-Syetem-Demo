@@ -1,0 +1,43 @@
+/* topbar.css
+.top-bar {
+    background-color: #282c34;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.top-bar-logo {
+    height: 50px;
+    /* or your preferred size */
+/* margin-right: 20px; */
+/* Adjust spacing to the right of the logo */
+/* } */
+
+/* components/topbar/TopBar.css */
+.top-bar {
+    background-color: #110c41;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+    /* Optional: add a shadow for depth */
+}
+
+.top-bar-logo {
+    height: 80px;
+    margin-right: 20px;
+}
+
+.top-bar-title {
+    margin: 0;
+    /* Adjust as needed */
+    font-size: 1.5rem;
+    /* Adjust as needed */
+    color: #333;
+    /* Adjust as needed */
+}
