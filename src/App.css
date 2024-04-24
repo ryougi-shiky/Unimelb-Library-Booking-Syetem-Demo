@@ -1,0 +1,25 @@
+.App-header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.Library-branch {
+  /* Styles for the library branch component */
+}
+
+.Occupancy-indicator {
+  /* Styles for the occupancy bar */
+}
+
+.Occupancy-bar {
+  height: 20px;
+  background-color: green;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Add more styles as needed */
