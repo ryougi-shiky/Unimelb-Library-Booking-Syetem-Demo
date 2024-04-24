@@ -1,8 +1,16 @@
 // Branch.jsx
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './branch.css'; // Make sure to create a Branch.css file for styles
 
 function Branch({ library, showCapacity, showNoiseLevel }) {
+    const navigate = useNavigate(); // Hook for navigation
+
+    // Function to navigate to the login page
+    const redirectToLogin = () => {
+        navigate('/login');
+    };
+
     const getNoiseLevelEmoji = (noiseLevel) => {
         switch (noiseLevel) {
             case 'Low':
@@ -10,14 +18,14 @@ function Branch({ library, showCapacity, showNoiseLevel }) {
             case 'Medium':
                 return '😐'; // Neutral face emoji
             case 'High':
-                return '😠'; // Angry face emoji
+                return '😫'; // Angry face emoji
             default:
                 return '';
         }
     };
 
     return (
-        <div className="library-branch">
+        <div className="library-branch" onClick={redirectToLogin}>
             <div className="branch-info">
                 <h2 className="branch-name">{library.name}</h2>
                 {showCapacity && (

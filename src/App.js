@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+
 import './App.css'; // Make sure to style your components with CSS
 import TopBar from './components/topbar/TopBar';
 import Branch from './components/branch/Branch';
 import ControlPanel from './components/controlPanel/ControPanel';
+import Login from './components/login/Login';
 
-// This would be your main App component.
 function App() {
   const [showCapacity, setShowCapacity] = useState(true);
   const [showNoiseLevel, setShowNoiseLevel] = useState(false);
@@ -31,22 +33,25 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <Router>
       <TopBar />
-
-      <main>
-        <section className="Library-dropdowns">
-          {/* Dropdown components */}
-        </section>
-        <h1 className='App-header'>Find Your Study Space</h1>
-        <section className="Library-branches">
-          {libraries.map((library) => (
-            <Branch key={library.name} library={library} showCapacity={showCapacity} showNoiseLevel={showNoiseLevel} />
-          ))}
-        </section>
-      </main>
-      <ControlPanel onOptionChange={handleOptionChange} showCapacity={showCapacity} showNoiseLevel={showNoiseLevel} />
-    </div>
+      <Routes>
+        <Route path="/" element={
+          <>
+            <main>
+              <h1 className='App-header'>Find Your Study Space</h1>
+              <section className="Library-branches">
+                {libraries.map((library) => (
+                  <Branch key={library.name} library={library} showCapacity={showCapacity} showNoiseLevel={showNoiseLevel} />
+                ))}
+              </section>
+            </main>
+            <ControlPanel onOptionChange={handleOptionChange} showCapacity={showCapacity} showNoiseLevel={showNoiseLevel} />
+          </>
+        } />
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </Router>
   );
 }
 

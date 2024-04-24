@@ -1,0 +1,68 @@
+/* login.css */
+.login-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00274c;
+    min-height: 100vh;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.login-logo {
+    margin-bottom: 2rem;
+    /* Adjust size and add a background image or an <img> tag for the logo */
+}
+
+.login-title {
+    color: white;
+    margin-top: 2rem;
+    /* Adjust the margin to push it down from the top bar */
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    /* Adjust width as needed */
+}
+
+.login-input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.login-button {
+    background-color: #4CAF50;
+    /* Adjust to match University of Melbourne button color */
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-footer {
+    color: white;
+}
+
+.login-logo {
+    margin-bottom: 2rem;
+}
+
+.login-logo img {
+    width: 150px;
+    /* Adjust the size as needed */
+    height: auto;
+}
